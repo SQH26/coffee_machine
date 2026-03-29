@@ -1,0 +1,23 @@
+[project]
+name = "coffee-machine"
+version = "0.1.0"
+description = "Coffee machine app with FastAPI backend and Next.js frontend."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.35.0",
+    "httpx>=0.28.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    ".",
+]
+testpaths = [
+    "tests",
+]
